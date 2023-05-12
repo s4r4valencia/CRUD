@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="css/mi_estilo8.css"/> 
 </head>
 <body>
    
+<div id="contenedor">
+    <h1>Lista de Tareas</h1>
+    <label for="inputTarea"><b>Título Tarea</b></label>
+    <input type="text" id="inputTarea">
+    <br>
+
+    <label for="inputDescripcion"><b>Descripción</b></label>
+    <input type="text" id="inputDescripcion">
+    <br>
+
+    <button id="agregar_o_editar" onclick="agregarTarea()">Agregar Tarea</button>
+    <br>
+    <button id="borrar_tareas" onclick="borrarTodasTareas()">Borrar todas las Tareas</button>
+
+    <ul id="listaTareas"></ul>
+
+    <div id="nota_editar" style="color: green;"> RECUERDA QUE NO PUEDES BORRAR O ELIMINAR MIENTRAS ESTAS EDITANDO </div>
+
+    <div id="nota"><b>Nota:</b> Si deseas, puedes ver en consola, como se va modificando el localstorage</div>
+
+    
+  </div>
+
+
+  <script src="js/script8.js"></script>
+
+
 </body>
 </html>
